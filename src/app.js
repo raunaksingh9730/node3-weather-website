@@ -22,14 +22,14 @@ app.use(express.static(publicDirectoryPath));
 app.get('',(req,res) =>{
     res.render('index',{
         title:'Weather',
-        name:'raunak'
+        name:'Raunak Singh(raunaksingh9730@gmail.com)'
     });
 })
 
 app.get('/help',(req,res) => {
     res.render('help',{
         title:'Help',
-        name:'raunak',
+        name:'Raunak Singh(raunaksingh9730@gmail.com)',
         message:'Hello,please visit on stackoverflow and offical documentation for the solution'
     });
 })
@@ -37,7 +37,7 @@ app.get('/help',(req,res) => {
 app.get('/about',(req,res) => {
     res.render('about',{
         title:'About',
-        name:'raunak'
+        name:'Raunak Singh(raunaksingh9730@gmail.com)'
     })
 })
 
@@ -86,21 +86,21 @@ app.get('/products',(req,res) => {
 app.get('/help/*',(req,res) => {
     res.render('404-page',{
         page:'Help artice',
-        name:'raunak'
+        name:'Raunak Singh(raunaksingh9730@gmail.com)'
     })
 })
 
 app.get('/about/*',(req,res) => {
     res.render('404-page',{
         page:'About artice',
-        name:'raunak'
+        name:'Raunak Singh(raunaksingh9730@gmail.com)'
     })
 })
 
 app.get('*',(req,res) => {
     res.render('404-page',{
         page:'Page',
-        name:'raunak'
+        name:'Raunak Singh(raunaksingh9730@gmail.com)'
     })
 })
 
